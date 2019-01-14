@@ -46,8 +46,8 @@ public class HttpURLConnection {
 //        con.setRequestProperty("apikey", "8308a2e1e77b606148f09146fdce4eb0166d28195275b4c2f1c5ee92");
 
         int responseCode = con.getResponseCode();
-        System.out.println("\nSending 'GET' request to URL : " + url);
-        System.out.println("Response Code : " + responseCode);
+//        System.out.println("\nSending 'GET' request to URL : " + url);
+//        System.out.println("Response Code : " + responseCode);
 
         BufferedReader in = new BufferedReader(
                 new InputStreamReader(con.getInputStream()));
@@ -60,7 +60,7 @@ public class HttpURLConnection {
         in.close();
 
         //print result
-        System.out.println(response.toString());
+//        System.out.println(response.toString());
         return response.toString();
 
     }
